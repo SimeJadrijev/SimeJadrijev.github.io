@@ -141,7 +141,7 @@
         text-align: center;
         padding: 20px;
     }
-    .o-nama h2{
+    .naslov-sekcije{
         display: flex;
         justify-content: center;
         color: #FFF000;
@@ -166,8 +166,50 @@
     .o-nama img{
         width: 100%;
         border-radius: 4px;
+        margin-left: 0;
+        margin-right: 0;
     }
-
+    .iskustvo-podsekcija{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(/slike/o\ nama.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        border-radius: 4px;
+    }
+    .pojedinacno-iskustvo{
+        height: 200px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 10px;
+        background-color: rgba(18, 18, 18, 0.5);
+        border-radius: 6px;
+    }
+    .opis{
+        color: #FFF000;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .broj{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nas-tim{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
 
 }
   

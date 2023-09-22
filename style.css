@@ -13,9 +13,13 @@
         margin: 0;
         padding: 0;
     }
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         font-family: 'Marcellus', serif;
     }
+    
     header{
         background-color: black;
         display: flex;
@@ -34,9 +38,6 @@
     }
     #menuList{
         display:none;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear;
         margin-bottom: 0;
     }
     #menuList.active{
@@ -47,8 +48,6 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        visibility: visible;
-        opacity: 1;
     }
     #menuList.active li{
         display: flex;
@@ -59,6 +58,12 @@
     #menuList.active li:last-child{
         margin-bottom: 0;
         padding-bottom: 20px;
+    }
+    #menuList.active li a{
+        color: #FFF000;
+        text-transform: uppercase;
+        list-style: none;
+        text-decoration: none;
     }
     .hero-section{
         background-image: url(/slike/pocetna.jpg);
@@ -140,6 +145,7 @@
         align-items: center;
         text-align: center;
         padding: 20px;
+        height: 100vh;
     }
     .naslov-sekcije{
         display: flex;
@@ -209,7 +215,41 @@
         text-align: center;
         padding: 20px;
     }
-    
+    #dario-lalic{
+        margin-top: 20px;
+        background-color: rgba(255, 240, 0, 0.6);
+        width: 400px;
+        border-radius: 4px;
+    }
+    #dario-lalic img{
+        margin-top: 15px;
+        height: 400px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    #dario-lalic h3{
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: black;
+    }
+    #dario-lalic p{
+        color: black;
+        font-size: 20px;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    .side-line{
+        background-color: black;
+        width: 50px;
+        height: 3px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 }
   

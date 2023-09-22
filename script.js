@@ -15,6 +15,15 @@ closeIcon.addEventListener("click", () => {
     closeIcon.style.display = "none";
 });
 
+let odabirBtn = document.querySelectorAll("#menuList a");
+odabirBtn.forEach((o) => {
+    o.addEventListener("click", () =>{
+        menuList.classList.remove("active");
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    })
+})
+
 //Counter animation
 let brojKlijenata = document.querySelector("#brojKlijenata");
 let godineIskustva = document.querySelector("#godineIskustva");

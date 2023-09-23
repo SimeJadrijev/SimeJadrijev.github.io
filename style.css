@@ -184,8 +184,10 @@
         background-image: url(/slike/o\ nama.jpg);
         background-position: center;
         background-size: cover;
-        height: 300px;
+        height: 420px;
         border-radius: 4px;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .pojedinacno-iskustvo{
         height: 200px;
@@ -214,12 +216,15 @@
         align-items: center;
         text-align: center;
         padding: 20px;
+        margin-top: 0;
+        padding-top: 0;
     }
-    #dario-lalic{
+    .odvjetnik-kartica{
         margin-top: 20px;
-        background-color: rgba(255, 240, 0, 0.6);
-        width: 400px;
+        background-color: rgb(163, 163, 163);
+        width: 370px;
         border-radius: 4px;
+        margin-bottom: 40px;
     }
     #dario-lalic img{
         margin-top: 15px;
@@ -250,6 +255,114 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    #bojan-filipovic img{
+        margin-top: 15px;
+        height: 400px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    #bojan-filipovic h3{
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: black;
+    }
+    #bojan-filipovic p{
+        color: black;
+        font-size: 20px;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    .podrucje-rada-upper{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .podrucje-rada-upper span{
+        width: 140px;
+    }
+    .podrucje-rada-middle{
+        background-image: url(/slike/podrucje\ rada.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+        box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,0.55);
+        display: flex;
+        align-items: center;
+    }
+    .podrucje-rada-middle p{
+        font-size: 18px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        font-family: 'Marcellus', serif;
+        text-align: center;
+        padding: 10px 10px;
+        line-height: 25px;
+    }
+    .podrucje-rada-middle p strong{
+        color: #FFF000;
+    }
+    .podrucje-rada-bottom{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+ 
+    
+    details{
+      background-color: #fff000;
+      color: black;
+      font-size: 1.5rem;
+      border: 1px solid black;
+    }
+    
+    summary {
+      padding: .5em 1.3rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;  
+      transition: height 1s ease;
+      width: 350px;
+      font-weight: bold;
+    }
+    
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    summary:after{
+      content: "\002B";
+      margin-left: 10px;
+    }
+    
+    details[open] summary {
+        border-bottom: 1.5px solid black;
+        margin-bottom: .5em;
+  
+    }
+    
+    details[open] summary:after{
+      content: "\00D7";
+    }
+    
+    details[open] div{
+      padding: .5em 1em;
+      width: 350px;
+      font-size: 22px;
 
+    }
+    
 }
   

@@ -46,3 +46,4 @@ animateCounter(brojKlijenata, parseInt(brojKlijenata.getAttribute("data-val")), 
 animateCounter(godineIskustva, parseInt(godineIskustva.getAttribute("data-val")), 4000);
 
 
+

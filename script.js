@@ -45,5 +45,42 @@ function animateCounter(element, endValue, duration) {
 animateCounter(brojKlijenata, parseInt(brojKlijenata.getAttribute("data-val")), 1);
 animateCounter(godineIskustva, parseInt(godineIskustva.getAttribute("data-val")), 4000);
 
+// Image slider
+
+const slider = document.querySelector(".image-slider");
+const arrLeft = document.querySelector(".arrow-left");
+const arrRight = document.querySelector(".arrow-right");
+const heading = document.querySelector(".caption ");
+
+const images = [
+    "makarska.jpg", "zgrada-ured.jpg"
+];
+const headings = [
+    "Makarska iz zraka", "Lokacija ureda"
+];
+let id = 0;
+function slide(id){
+    slider.style.backgroundImage = `url(/slike/${images[id]})`;
+    slider.classList.add("image-fade");
+    setTimeout(() => {
+        slider.classList.remove("image-fade");
+    }, 550);
+    heading.innerHTML = `<div class="caption">${headings[id]}</div>` ;
+}
+arrLeft.addEventListener("click",()=>{
+    id--;
+    if(id<0){
+        id = images.length-1;
+    }
+    slide(id);
+});
+
+arrRight.addEventListener("click",()=>{
+    id++;
+    if(id > images.length -1){
+        id = 0;
+    }
+    slide(id);
+});
 
 

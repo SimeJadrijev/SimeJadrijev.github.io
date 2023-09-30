@@ -3,8 +3,497 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Marcellus', serif;
+
+}
+/* Za računala */
+@media only screen and (min-width: 961px){
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'Marcellus', serif;
+        color: white;
+        background-color: #000;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 40px;
+        background-color: #000;
+        align-items: center;
+    }
+    #menuList{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        text-transform: uppercase;
+    }
+    #menuList li a{
+        text-decoration: none;
+        color: #fff000;
+        cursor: pointer;
+    }
+    #menuList li:last-child{
+        border: 2px solid #fff000;
+        border-radius: 10px;
+        padding: 5px 5px;
+        position: relative;
+        bottom: 5px;
+    }
+    .desni-header{
+        display: none;
+    }
+    .hero-section{
+        height: 90vh;
+        background-image: url(/slike/pocetna.jpg);
+        background-size: cover;
+        background-position: calc(50% + 70px) center;
+        box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,0.4);
+    }
+    .hero-upper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 120px;
+        align-items: center;
+        height: 350px;
+    }
+    .hero-upper{
+        color: white;
+        padding: 20px;   
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+    }
+    .hero-upper h1{
+        font-size: 55px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding: 3px 3px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        font-family: 'PT Sans', sans-serif;
+        font-family: 'Marcellus', serif;
+        text-align: center;
+    }
+    .hero-upper h2{
+        font-size: 40px;
+        letter-spacing: 4px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        font-family: 'PT Sans', sans-serif;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .hero-bottom{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    button {
+    background: rgba(255, 240, 0, 0.7);
+    border: none;
+    padding: 20px 40px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    width: 250px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    letter-spacing: 3px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    }
+
+    button span {
+    display: inline-block;
+    transform: skew(21deg);
+    font-size: 20px;
+    letter-spacing: 3px;
+    }
+    .o-nama{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 100vh;
+    }
+    .naslov-sekcije{
+        display: flex;
+        justify-content: center;
+        color: #FFF000;
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .underliner{
+        width: 60px;
+        height: 2px;
+        background-color: #FFF000;
+        display: flex;
+        margin-top: 2px;
+    }
+    .o-nama p{
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 6px;
+        width: 700px;
+        line-height: 25px;
+    }
+    .o-nama p strong{
+        color: #FFF000;
+    }
+    .o-nama img{
+        width: 100%;
+        border-radius: 4px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .iskustvo-podsekcija{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(/slike/o\ nama.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 420px;
+        border-radius: 4px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .pojedinacno-iskustvo{
+        height: 200px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 10px;
+        background-color: rgba(18, 18, 18, 0.5);
+        border-radius: 6px;
+    }
+    .opis{
+        color: #FFF000;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .broj{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nas-tim{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .odvjetnici{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .odvjetnik-kartica{
+        margin-top: 20px;
+        background-color: rgb(163, 163, 163);
+        width: 370px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+    }
+    #dario-lalic img{
+        margin-top: 15px;
+        height: 400px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    #dario-lalic h3{
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: black;
+    }
+    #dario-lalic p{
+        color: black;
+        font-size: 20px;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    .side-line{
+        background-color: black;
+        width: 50px;
+        height: 3px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #bojan-filipovic img{
+        margin-top: 15px;
+        height: 400px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    #bojan-filipovic h3{
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: black;
+    }
+    #bojan-filipovic p{
+        color: black;
+        font-size: 20px;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    .podrucje-rada-upper{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .podrucje-rada-upper span{
+        width: 140px;
+    }
+    .podrucje-rada-middle{
+        background-image: url(/slike/podrucje\ rada.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,0.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .podrucje-rada-middle p{
+        font-size: 22px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        font-family: 'Marcellus', serif;
+        text-align: center;
+        padding: 10px 10px;
+        line-height: 25px;
+        width: 800px;
+    }
+    .podrucje-rada-middle p strong{
+        color: #FFF000;
+    }
+    .podrucje-rada-bottom{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+ 
+    
+    details{
+      background-color: #fff000;
+      color: black;
+      font-size: 1.5rem;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+    
+    summary {
+      padding: .5em 1.3rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;  
+      transition: height 1s ease;
+      width: 650px;
+      font-weight: bold;
+    }
+    
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    summary:after{
+      content: "\002B";
+      margin-left: 10px;
+    }
+    
+    details[open] summary {
+        border-bottom: 1.5px solid black;
+        margin-bottom: .5em;
+  
+    }
+    
+    details[open] summary:after{
+      content: "\00D7";
+    }
+    
+    details[open] div{
+      padding: .5em 1em;
+      width: 650px;
+      font-size: 22px;
+      text-align:left;
+    }
+    .kako-do-nas-upper{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .kako-do-nas-upper span{
+        width: 110px;
+    }
+    .kako-do-nas-middle{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .image-slider{
+        width: 50%;
+        background-size: cover;
+        height: 634px;
+        position: relative;
+        background-image: url(/slike/makarska.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .caption{
+        background: linear-gradient(rgba(0,0,0,0), #000);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 4em 1em 2em 1em;
+        font-size: 24px;
+    }
+    .caption h1{
+        margin: 0;
+        color: white;
+    }
+    .arrow-left, .arrow-right{
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 40%;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .arrow-left{
+        left:1em;
+    }
+    .arrow-right{
+        right: 1em;
+    }
+    .image-fade{
+      animation: imgFade 0.5s ease-in-out;  
+    }
+    @keyframes imgFade{
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+    .kako-do-nas-middle h3{
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+    .kako-do-nas-middle a{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+        width: 100%;
+    }
+    iframe{
+        width: 75%;
+        height: 500px;
+        margin:px;
+        padding: 15px;
+    }
+    .kako-do-nas-middle h3{
+        width: 100%;
+    }
+    .radno-vrijeme{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .radno-vrijeme span{
+        width: 130px;
+    }
+    .radno-vrijeme.bottom{
+        background-image: url(/slike/radno\ vrijeme\ 2.jpg);
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,0.7);
+    }
+    .bottom{
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    .bottom h4{
+        font-size: 30px;
+    }
+    .bottom h5{
+        font-size: 22px;
+    }
+    .nas-kontakt{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .nas-kontakt span{
+        width: 110px;
+    }
+
 }
 
+
+
+
+/* Za mobitele */
 @media only screen and (max-width: 767px) {
     /* Stilovi za mobilne uređaje ovdje 
             background-color: #1a1c22;
@@ -20,7 +509,7 @@
         font-family: 'Marcellus', serif;
     }
     
-    header{
+    header .gornji{
         background-color: black;
         display: flex;
         justify-content: space-between;
@@ -104,6 +593,7 @@
         border-radius: 4px;
         font-family: 'PT Sans', sans-serif;
         text-align: center;
+        margin-top: 5px;
     }
     .hero-middle{
         /**/
@@ -165,6 +655,7 @@
         margin-bottom: 15px;
         padding: 10px;
         border-radius: 6px;
+        line-height: 22px;
     }
     .o-nama p strong{
         color: #FFF000;
@@ -361,6 +852,7 @@
       padding: .5em 1em;
       width: 350px;
       font-size: 22px;
+      text-align: left;
 
     }
 
@@ -451,5 +943,91 @@
     .kako-do-nas-middle h3{
         width: 100%;
     }
+    .radno-vrijeme{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .radno-vrijeme span{
+        width: 130px;
+    }
+    .radno-vrijeme.bottom{
+        background-image: url(/slike/radno\ vrijeme\ 1.jpg);
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,0.7);
+    }
+    .bottom{
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .bottom h4{
+        font-size: 20px;
+    }
+    .bottom h5{
+        font-size: 16px;
+    }
+    .nas-kontakt{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .nas-kontakt span{
+        width: 110px;
+    }
+
+    /* ANIMACIJE */
+
+    #menuList{
+        perspective: none;
+    }
+    #menuList li{
+        animation: animationOpen 1s ease forwards;
+        transform-origin: right;
+        transform: rotateY(-90deg);
+    }
+    #menuList li:nth-child(2){
+        animation-delay: 100ms;
+    }
+    #menuList li:nth-child(3){
+        animation-delay: 200ms;
+    }
+    #menuList li:nth-child(4){
+        animation-delay: 300ms;
+    }
+    #menuList li:nth-child(5){
+        animation-delay: 400ms;
+    }
+    #menuList li:nth-child(6){
+        animation-delay: 500ms;
+    }
+    #menuList li:nth-child(7){
+        animation-delay: 600ms;
+    }
+    @keyframes animationOpen {
+        to{
+            transform: rotate(0);
+        }
+    }
+    /* Animacija za "animate" elemente 
+    .animate{
+        transition:all 1s;
+    } */
+
+
+
+
+
 }
   

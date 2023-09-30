@@ -83,4 +83,38 @@ arrRight.addEventListener("click",()=>{
     slide(id);
 });
 
+// Animacije
+
+let sections = document.querySelectorAll(".treba");
+console.log(sections);
+window.onscroll = () =>{
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+
+        if (top >= offset && top < offset + height){
+            sec.classList.add("animate")
+        }else{
+            sec.classList.remove("animate")
+        }
+    })
+} 
+/*
+window.onscroll = () =>{
+
+    this.oldScroll = this.scrollY;
+    let sectionForAnimation = document.querySelector(".hero-upper");
+    let sectionPosition = sectionForAnimation.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.3;
+    let ciljani = document.querySelector(".hero-upper")
+
+    if(sectionPosition < screenPosition){
+        ciljani.classList.add("animate");
+        ciljani.classList.add("animate");
+    }
+     
+}*/
+
+
 

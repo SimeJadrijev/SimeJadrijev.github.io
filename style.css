@@ -18,9 +18,15 @@
     header {
         display: flex;
         justify-content: space-around;
-        margin: 0 40px;
         background-color: #000;
         align-items: center;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
     }
     #menuList{
         list-style: none;
@@ -32,14 +38,36 @@
         text-decoration: none;
         color: #fff000;
         cursor: pointer;
+        position: relative;
+        top: 8px;
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+        transition: all 0.2s ease-in;
+
     }
-    #menuList li:last-child{
+    #menuList li a:hover{
+        border: 2px solid #fff000;
+        background-color: #fff000;
+        border-radius: 3px;
+        color: black;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    #last-child-kontakt{
         border: 2px solid #fff000;
         border-radius: 10px;
         padding: 5px 5px;
         position: relative;
         bottom: 5px;
+        transition: background-color 0.3s ease;
     }
+    #menuList li:last-child a:hover {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+    }    
+
     .desni-header{
         display: none;
     }
@@ -104,7 +132,7 @@
     letter-spacing: 3px;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    transition: all 0.5s;
     }
 
     button span {
@@ -113,6 +141,11 @@
     font-size: 20px;
     letter-spacing: 3px;
     }
+    button:hover{
+        color: black;
+        background-color: #FFF000;
+    }
+
     .o-nama{
         background-color: rgb(0, 0, 0);
         color: white;
@@ -122,7 +155,7 @@
         text-align: center;
         padding: 20px;
         height: 100vh;
-    }
+    } 
     .naslov-sekcije{
         display: flex;
         justify-content: center;
@@ -131,7 +164,7 @@
         font-size: 40px;
     }
     .underliner{
-        width: 60px;
+        width: 110px;
         height: 2px;
         background-color: #FFF000;
         display: flex;
@@ -208,9 +241,13 @@
     .odvjetnik-kartica{
         margin-top: 20px;
         background-color: rgb(163, 163, 163);
+        background-color: #333333;
         width: 370px;
         border-radius: 4px;
         margin-bottom: 40px;
+        background: linear-gradient(45deg, transparent 49%, #FFD700 50%), #FFD700;
+        background-size: 100% 100%;
+        background-color: rgb(212, 205, 205);                 
     }
     #dario-lalic img{
         margin-top: 15px;
@@ -271,7 +308,7 @@
         padding: 20px;
     }
     .podrucje-rada-upper span{
-        width: 140px;
+        width: 220px;
     }
     .podrucje-rada-middle{
         background-image: url(/slike/podrucje\ rada.jpg);
@@ -362,7 +399,7 @@
         padding: 20px;
     }
     .kako-do-nas-upper span{
-        width: 110px;
+        width: 210px;
     }
     .kako-do-nas-middle{
         background-color: rgb(0, 0, 0);
@@ -450,7 +487,7 @@
         padding: 20px;
     }
     .radno-vrijeme span{
-        width: 130px;
+        width: 235px;
     }
     .radno-vrijeme.bottom{
         background-image: url(/slike/radno\ vrijeme\ 2.jpg);
@@ -485,7 +522,7 @@
 
     }
     .nas-kontakt span{
-        width: 110px;
+        width: 220px;
     }
 
 }

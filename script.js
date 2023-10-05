@@ -116,5 +116,35 @@ window.onscroll = () =>{
      
 }*/
 
+/*
+document.addEventListener("DOMContentLoaded", function() {
+  // Pronađite sve navigacijske linkove u listi
+  var navigationLinks = document.querySelectorAll('.donji a');
+  
+  // Dodajte slušatelja događaja na klik svakog linka
+  navigationLinks.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+      e.preventDefault(); // Spriječite preusmjeravanje na ciljanu sekciju
+      
+      // Pronađite ciljanu sekciju na temelju href atributa linka
+      var targetSectionId = link.getAttribute('href').substring(1); // Uklonite "#" znak
+      var targetSection = document.getElementById(targetSectionId);
+      
+      if (targetSection) {
+        // Izračunajte krajnju visinu na koju želite pomaknuti stranicu (50 piksela iznad ciljane sekcije)
+        var targetPosition = targetSection.getBoundingClientRect().top - 100;
+        
+        // Pomaknite stranicu pomoću smooth scroll animacije
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
+*/
 
 

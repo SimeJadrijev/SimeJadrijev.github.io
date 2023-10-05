@@ -118,7 +118,7 @@
         justify-content: center;
         margin-bottom: 25px;
     }
-    button {
+    .hero-bottom button {
     background: rgba(255, 240, 0, 0.7);
     border: none;
     padding: 20px 40px;
@@ -135,13 +135,13 @@
     transition: all 0.5s;
     }
 
-    button span {
+    .hero-bottom button span {
     display: inline-block;
     transform: skew(21deg);
     font-size: 20px;
     letter-spacing: 3px;
     }
-    button:hover{
+    .hero-bottom button:hover{
         color: black;
         background-color: #FFF000;
     }
@@ -524,6 +524,109 @@
     .nas-kontakt span{
         width: 220px;
     }
+    .nas-kontakt{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .nas-kontakt span{
+        width: 110px;
+    }
+    .nas-kontakt-bottom{
+        height: 140vh;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .kontakt-podaci{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .podatak img{
+        width: 30px;
+    }
+    .podatak{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+        justify-content: flex-start;
+        position: relative;
+        left: 35px;
+    }
+    .podatak a{
+        color: white;
+        text-decoration: none;
+    }
+    .kontakt-podaci hr{
+        width: 80%;
+    }
+    .kontakt-poruka{
+        width: 100%;
+        height: 60%;
+    }
+    .kontakt-poruka form{
+        height: 62vh;
+        margin: 10px 50px;
+        border-radius: 10px;
+        color: white;   
+        padding: 30px 10px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(194, 186, 73);
+        
+
+    }
+    .forma-redak input{
+        border-radius: 5px;
+        width: 300px;
+        height: 25px;
+        padding: 18px;
+        border: 0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        font-family: inherit;
+        font-size: inherit;
+        margin-bottom: 15px;
+    }
+    .forma-redak input::-webkit-input-placeholder {
+        text-align: center;
+    }
+    #poruka{
+        height: 100px;
+    }
+    #posalji-poruku-btn{
+        padding: 7px 7px;
+        background: rgba(255, 240, 0, 0.7);
+        border: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 800;
+        width: 250px;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 3px;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: all 0.4s;
+        border-radius: 6px;   
+        font-family: 'Playfair Display', serif;
+
+    }
+    #posalji-poruku-btn:hover{
+        background-color: black;
+        color: #fff000;
+    }
 
 }
 
@@ -544,14 +647,29 @@
     }
     body{
         font-family: 'Marcellus', serif;
+        background-color: #000;
     }
-    
+
+
     header .gornji{
         background-color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        height: 110px;
     }
+
+    header{
+        position: sticky;
+        height: 110px;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+    }
+
     #logo{
         padding: 10px 10px;
     }
@@ -641,7 +759,7 @@
         justify-content: center;
         margin-bottom: 25px;
     }
-    button {
+    .hero-bottom button {
     background: rgba(255, 240, 0, 0.7);
     border: none;
     padding: 10px 20px;
@@ -658,7 +776,7 @@
     
     }
 
-    button span {
+    .hero-bottom button span {
     display: inline-block;
     transform: skew(21deg);
     font-size: 18px;
@@ -753,6 +871,10 @@
         width: 370px;
         border-radius: 4px;
         margin-bottom: 40px;
+        background: linear-gradient(45deg, transparent 49%, #FFD700 50%), #FFD700;
+        background-size: 100% 100%;
+        background-color: rgb(212, 205, 205);                 
+
     }
     #dario-lalic img{
         margin-top: 15px;
@@ -1023,6 +1145,98 @@
     .nas-kontakt span{
         width: 110px;
     }
+    .nas-kontakt-bottom{
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .kontakt-podaci{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .podatak img{
+        width: 30px;
+    }
+    .podatak{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+        justify-content: flex-start;
+        position: relative;
+        left: 35px;
+    }
+    .podatak a{
+        color: white;
+        text-decoration: none;
+    }
+    .kontakt-podaci hr{
+        width: 80%;
+    }
+    .kontakt-poruka{
+        width: 100%;
+        height: 60%;
+    }
+    .kontakt-poruka form{
+        height: 63vh;
+        margin: 10px 50px;
+        border-radius: 10px;
+        color: white;   
+        padding: 30px 30px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(194, 186, 73);
+    }
+    .forma-redak input{
+        border-radius: 5px;
+        width: 300px;
+        height: 25px;
+        padding: 18px;
+        border: 0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        font-family: inherit;
+        font-size: inherit;
+        margin-bottom: 15px;
+    }
+    .forma-redak input::-webkit-input-placeholder {
+        text-align: center;
+    }
+    #poruka{
+        height: 100px;
+    }
+    #posalji-poruku-btn{
+        padding: 5px 5px;
+        background: rgba(255, 240, 0, 0.7);
+        border: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 800;
+        width: 250px;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 3px;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: all 0.4s;
+        border-radius: 6px;   
+        margin-top: 5px;
+        width: 200px;
+        font-family: 'Playfair Display', serif;
+
+    }
+    #posalji-poruku-btn:hover{
+        background-color: black;
+        color: #fff000;
+    }
+
+
+
 
     /* ANIMACIJE */
 

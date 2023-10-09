@@ -152,6 +152,9 @@
     font-size: 18px;
     letter-spacing: 3px;
     }
+    .hero-bottom a{
+        color: black;
+    }
     .o-nama{
         background-color: rgb(0, 0, 0);
         color: white;
@@ -795,6 +798,9 @@
     .hero-bottom button:hover{
         color: black;
         background-color: #FFF000;
+    }
+    .hero-bottom a{
+        color: black;
     }
 
     .o-nama{
@@ -1445,6 +1451,9 @@
     transform: skew(21deg);
     font-size: 18px;
     letter-spacing: 3px;
+    }
+    .hero-bottom a{
+        color: black;
     }
     .o-nama{
         background-color: rgb(0, 0, 0);

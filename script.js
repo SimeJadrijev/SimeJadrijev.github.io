@@ -25,6 +25,7 @@ odabirBtn.forEach((o) => {
 })
 
 //Counter animation
+/*
 let brojKlijenata = document.querySelector("#brojKlijenata");
 let godineIskustva = document.querySelector("#godineIskustva");
 
@@ -44,7 +45,7 @@ function animateCounter(element, endValue, duration) {
 
 animateCounter(brojKlijenata, parseInt(brojKlijenata.getAttribute("data-val")), 1);
 animateCounter(godineIskustva, parseInt(godineIskustva.getAttribute("data-val")), 4000);
-
+*/
 // Image slider
 
 const slider = document.querySelector(".image-slider");
@@ -84,9 +85,9 @@ arrRight.addEventListener("click",()=>{
 });
 
 // Animacije
-
+/*
 let sections = document.querySelectorAll(".treba");
-console.log(sections);
+
 window.onscroll = () =>{
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -100,6 +101,32 @@ window.onscroll = () =>{
         }
     })
 } 
+*/
+//Kontakt forma
+
+let imePosiljatelja = document.getElementById("ime").value;
+let emailPosiljatelja = document.getElementById("email").value;
+let brojPosiljatelja = document.getElementById("phone").value;
+let porukaPosiljatelja = document.getElementById("poruka").value;
+
+
+let xmlhttp = new XMLHttpRequest();
+let url = "test.php";
+xmlhttp.open("POST",url, true);
+
+xmlhttp.onreadystatechange = function () {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        imePosiljatelja.value = "";
+        emailPosiljatelja.value = "";
+        brojPosiljatelja.value = "";
+        porukaPosiljatelja.value = "";
+    }
+}
+
+let data = "ime=" +imePosiljatelja + "&email=" + emailPosiljatelja + "&phone=" + brojPosiljatelja + "&poruka=" + porukaPosiljatelja;
+xmlhttp.send(data);
+
+
 /*
 window.onscroll = () =>{
 
@@ -127,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault(); // Spriječite preusmjeravanje na ciljanu sekciju
       
       // Pronađite ciljanu sekciju na temelju href atributa linka
-      var targetSectionId = link.getAttribute('href').substring(1); // Uklonite "#" znak
+      var targetSectionId = link.getAttribute('href').substring(1); 
       var targetSection = document.getElementById(targetSectionId);
       
       if (targetSection) {

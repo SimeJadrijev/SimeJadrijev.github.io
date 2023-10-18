@@ -1023,6 +1023,9 @@
       width: 650px;
       font-weight: bold;
     }
+    summary:hover{
+        background-color: #dfd10e;
+    }
     
     summary::-webkit-details-marker {
       display: none;
@@ -1237,7 +1240,6 @@
         height: 60%;
     }
     .kontakt-poruka form{
-        height: 62vh;
         margin: 10px 50px;
         border-radius: 10px;
         color: white;   

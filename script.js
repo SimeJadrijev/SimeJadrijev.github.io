@@ -104,27 +104,31 @@ window.onscroll = () =>{
 */
 //Kontakt forma
 
-let imePosiljatelja = document.getElementById("ime").value;
-let emailPosiljatelja = document.getElementById("email").value;
-let brojPosiljatelja = document.getElementById("phone").value;
-let porukaPosiljatelja = document.getElementById("poruka").value;
+const posaljiPorukuBtn = document.getElementById("posalji-poruku-btn");
+
+posaljiPorukuBtn.addEventListener("click", function() {
+    let imePosiljatelja = document.getElementById("ime").value;
+    let emailPosiljatelja = document.getElementById("email").value;
+    let brojPosiljatelja = document.getElementById("phone").value;
+    let porukaPosiljatelja = document.getElementById("poruka").value;
 
 
-let xmlhttp = new XMLHttpRequest();
-let url = "test.php";
-xmlhttp.open("POST",url, true);
+    let xmlhttp = new XMLHttpRequest();
+    let url = "test.php";
+    xmlhttp.open("POST",url, true);
 
-xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        imePosiljatelja.value = "";
-        emailPosiljatelja.value = "";
-        brojPosiljatelja.value = "";
-        porukaPosiljatelja.value = "";
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            imePosiljatelja.value = "";
+            emailPosiljatelja.value = "";
+            brojPosiljatelja.value = "";
+            porukaPosiljatelja.value = "";
+        }
     }
-}
 
-let data = "ime=" +imePosiljatelja + "&email=" + emailPosiljatelja + "&phone=" + brojPosiljatelja + "&poruka=" + porukaPosiljatelja;
-xmlhttp.send(data);
+    let data = "ime=" +imePosiljatelja + "&email=" + emailPosiljatelja + "&phone=" + brojPosiljatelja + "&poruka=" + porukaPosiljatelja;
+    xmlhttp.send(data);
+});
 
 
 /*
@@ -143,35 +147,5 @@ window.onscroll = () =>{
      
 }*/
 
-/*
-document.addEventListener("DOMContentLoaded", function() {
-  // Pronađite sve navigacijske linkove u listi
-  var navigationLinks = document.querySelectorAll('.donji a');
-  
-  // Dodajte slušatelja događaja na klik svakog linka
-  navigationLinks.forEach(function(link) {
-    link.addEventListener("click", function(e) {
-      e.preventDefault(); // Spriječite preusmjeravanje na ciljanu sekciju
-      
-      // Pronađite ciljanu sekciju na temelju href atributa linka
-      var targetSectionId = link.getAttribute('href').substring(1); 
-      var targetSection = document.getElementById(targetSectionId);
-      
-      if (targetSection) {
-        // Izračunajte krajnju visinu na koju želite pomaknuti stranicu (50 piksela iznad ciljane sekcije)
-        var targetPosition = targetSection.getBoundingClientRect().top - 100;
-        
-        // Pomaknite stranicu pomoću smooth scroll animacije
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-});
-
-
-*/
 
 
